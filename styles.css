@@ -1,0 +1,73 @@
+div.header {
+    background-color: #3f78eb;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.image {
+    padding: 12px;
+    width: 250px;
+}
+
+div.date {
+    margin-top: 20px;
+    padding: 12px;
+    color: white;
+}
+
+div.articles {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.article {
+    padding: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+div.title_text {
+    color: black; 
+    font-weight: bold; 
+    font-size: 20px; 
+    padding-bottom: 7px
+}
+
+div.title_description {
+    font-size: 12px;
+}
+
+div.title {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.lion_container {
+    display: flex;
+    border-width: 1px;
+    border-color: #e8e8e8;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 3px;
+    max-width: 250px;
+}
+
+div.text_container {
+    padding: 10px;
+}
+
+div.article_text {
+    font-size: smaller;
+}
+
+div.article_quote {
+    font-size: smaller;
+    font-style: italic;
+}
