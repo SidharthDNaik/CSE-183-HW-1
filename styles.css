@@ -27,9 +27,6 @@ div.articles {
 
 div.article {
     padding: 10px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
 }
 
 div.title_text {
@@ -60,7 +57,7 @@ div.lion_container {
 }
 
 div.text_container {
-    padding: 10px;
+    padding: 5px;
 }
 
 div.article_text {
@@ -70,4 +67,27 @@ div.article_text {
 div.article_quote {
     font-size: smaller;
     font-style: italic;
+}
+
+div.article_column {
+    padding: 5px;
+}
+
+div.ad_row {
+    display: flex;
+    flex-direction: row;
+}
+
+div.ad_column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.ad1 {
+    background-color: darkcyan;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
 }

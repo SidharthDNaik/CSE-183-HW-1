@@ -1,3 +1,9 @@
+<!-- 
+    Sidharth Naik 
+    CSE: 183
+    HW: 1
+    Thank you TA's for grading this!
+-->
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -5,11 +11,138 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS styles for project -->
+    <style>
+        div.header {
+            background-color: #3f78eb;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        div.image {
+            padding: 12px;
+            width: 250px;
+        }
+
+        div.date {
+            margin-top: 20px;
+            padding: 12px;
+            color: white;
+        }
+
+        div.articles {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.article {
+            padding: 10px;
+        }
+
+        div.title_text {
+            color: black; 
+            font-weight: bold; 
+            font-size: 20px; 
+            padding-bottom: 7px
+        }
+
+        div.title_description {
+            font-size: 12px;
+        }
+
+        div.title {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.lion_container {
+            display: flex;
+            border-width: 1px;
+            border-color: #e8e8e8;
+            flex-direction: column;
+            border-style: solid;
+            border-radius: 3px;
+            max-width: 250px;
+        }
+
+        div.text_container {
+            padding: 5px;
+        }
+
+        div.article_text {
+            font-size: smaller;
+        }
+
+        div.article_quote {
+            font-size: smaller;
+            font-style: italic;
+        }
+
+        div.article_column {
+            padding: 5px;
+        }
+
+        div.ad_row {
+            display: flex;
+            flex-direction: row;
+        }
+        div.ad_column {
+            width: 50%;
+            margin-bottom: 5px;
+        }
+        div.ad1 {
+            background-color: #00d1b2;
+            color: white;
+            height: 100px;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        div.ad2 {
+            background-color: #ffdd57;
+            color: black;
+            height: 100px;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        div.ad3 {
+            background-color: #3273dc;
+            color: white;
+            height: 50px;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        div.ad5 {
+            background-color: #23d160;
+            color: white;
+            height: 120px;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        div.ad6 {
+            background-color: #ff3860;
+            color: white;
+            height: 74px;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
+<!-- This contains the UCSC Logo and Date -->
 <div class="container is-fluid">
     <div class="header"> 
         <div class="image">
@@ -23,11 +156,14 @@
     </div>
 </div>
 
+<!-- This contains the articles -->
 <div class="container is-fluid">
     <div class="articles">
 
+        <!-- This contains the first article -->
         <div class="article">
 
+            <!-- The header -->
             <div class="title">
                 <div class="title_text">
                     Mountain Lion Sighted on Campus
@@ -37,15 +173,18 @@
                 </div>
             </div>
 
+            <!-- The article content -->
             <div style="display: flex; flex-direction: row;">
-                <div style="padding: 5px">
+
+                <!-- The lion image -->
+                <div class="article_column">
                     <div class="lion_container">
-                        <div style="padding-right: 5px; max-width: 180px; margin-left: auto;">
+                        <div style="max-width: 200px; align-self: center;">
                             <img
                                 src="https://storage.googleapis.com/luca-teaching/lion-layers-2.svg"
                             >   
                         </div>
-                        <div style="padding: 10px; font-family: Arial, Helvetica, sans-serif; color: black; font-size: smaller;">
+                        <div style="text-align: center; padding: 10px; font-family: Arial, Helvetica, sans-serif; color: black; font-size: smaller;">
                             A lion has been seen roaming the empty library.
                         </div>
                     </div>
@@ -57,7 +196,8 @@
                     </div>
                 </div>
 
-                <div style="padding: 5px">
+                <!-- The article text -->
+                <div class="article_column">
                     <div class="text_container">
                         <div class="article_quote">
                             "It is truly disappointing! Great minds, such as Don Knuth and Leslie Lamport, devoted their time to improving the art of typography and the science of optimizing the presentation of content on a page, and then here come like a band of savages these web developers, oblivious to the great work of the past, with this completely inane and baroque language!".
@@ -73,12 +213,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
 
+        <!-- This contains the second article -->
         <div class="article">
 
+            <!-- The header -->
             <div class="title">
                 <div class="title_text">
                     Professor de Alfaro Claims Break-Through in Graphics
@@ -88,7 +231,8 @@
                 </div>
             </div>
 
-            <div class="text_column">
+            <!-- The article text -->
+            <div class="article_column">
                 <div class="text_container">
                     <div class="article_text">
                         Ray-tracing is a technique for scene rendering in which the light rays that fall into an observer's eyes are retraced, so to say, in the reverse direction, to reconstruct exactly what the view would have been. This is a daunting process, because when encoutering solid bodies, light is scattered, and so the ray tracing must chase the many possible backwards paths of such scattering. Professor de Alfaro recently claimed to have invented a new, far more efficient algorithm, one that works in microseconds regardless of the dimension or complexity of the scene. "There are a few restrictions," he added, "and for the moment our new technique is applicable only to closed environments in which the integral of the luminous flux is zero across any closed surface." The contribution is currently undergoing peer review.
@@ -97,12 +241,53 @@
             </div>
 
         </div>
+
     </div>
 </div>
 
+<!-- This contains the ads -->
+<div class="container is-fluid">
+    <!-- ad_container -->
+    <div class="ad_row">
+        <!-- first_column -->
+        <div class="column is-two-fifths">
 
-<div class="ads">
-    ads
+            <div class="ad1">
+                Ad1
+            </div>
+
+            <div class="ad2">
+                Ad2
+            </div>
+
+        </div>
+        <!-- second_column -->
+        <div class="column is-three-fifths">
+            <!-- ad345 -->
+            <div class="ad_row">
+                <!-- ad34 -->
+                <div class="ad_column">
+                    <div class="ad3">
+                        Ad3
+                    </div>
+
+                    <div class="ad3">
+                        Ad4
+                    </div>
+                </div>
+                <div class="ad_column">
+                    <div class="ad5">
+                        Ad5
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad6">
+                Ad6
+            </div>
+
+        </div>
+    </div>
 </div>
 
 
